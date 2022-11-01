@@ -49,8 +49,13 @@ table {
 
 /*以下為個人CSS設計之開始*/
 
-.wrap {
+.wrap * {
     box-sizing: border-box;
+}
+
+.wrap {
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .header .social {
@@ -93,6 +98,7 @@ table {
 
 .header .navbar ul {
     display: flex;
+    height: 52px;
 }
 
 .header .navbar ul li {
@@ -104,7 +110,7 @@ table {
 .header .navbar ul li a {
     text-decoration: none;
     color: #00cc99;
-    padding: 10px;
+    display: block;
 }
 
 .header .navbar ul li a:hover {
@@ -250,6 +256,7 @@ table {
     resize: none;
     border-radius: 5px;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .interest .text .data {
@@ -277,7 +284,7 @@ table {
     color: #fff;
     font-weight: bold;
     border: 0;
-    margin-left: 385px;
+    align-self: end;
 }
 
 .interest .text .data .btn:hover {
