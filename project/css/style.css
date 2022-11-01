@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*以下為個人CSS設計之開始*/
+
+.wrap {
+    box-sizing: border-box;
+}
+
+.header .social {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0;
+}
+
+.header .social a {
+    display: flex;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #00aaec;
+}
+
+.header .social .rightBorder {
+    border-right: 1px solid gray;
+    color: #4460a0;
+}
+
+.header .social a p {
+    margin-left: 3px;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.header .navbar .home {
+    height: 52px;
+    overflow: hidden;
+}
+
+.header .navbar img {
+    height: 48px;
+}
+
+.header .navbar ul {
+    display: flex;
+}
+
+.header .navbar ul li {
+    width: 100px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.header .navbar ul li a {
+    text-decoration: none;
+    color: #00cc99;
+    padding: 10px;
+}
+
+.header .navbar ul li a:hover {
+    border-bottom: 5px solid #00cc99;
+}
+
+.header .title {
+    height: 418px;
+    background-image: url(../images/banner_15.jpg);
+    background-size: 100vw;
+    background-repeat:no-repeat;
+    border-top: 1px solid transparent;
+}
+
+.header .title h2 {
+    background-color: #d9d9d91d;
+    color: #fff;
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 38px 24px;
+    margin: 100px 0;
+}
+
+
+
+.content .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 65px 0;
+}
+
+.content .skills .skill {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 5px 5px gray;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+@media  only screen and (max-width: 768px) {
+    .content .skills .skill {
+        
+    }
+}
+
+.content .skills .skill .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .skills .skill .pad-bot {
+    padding: 25px 0;
+}
+
+.content .skills .skill h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.content .skills .skill p {
+    line-height: 1.5;
+
+}
+
+.content .skills .jquery ul {
+    display: block;
+    padding-left: 20px;
+}
+
+.content .skills p, .content .skills .jquery ul li {
+    text-align: left;
+}
+
+.content .skills .jquery li {
+    box-shadow: 0 0px 0px #fff;
+    padding: 0;
+    line-height: 1.5;
+    list-style: initial;
+}
+
+.course h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 28px 0;
+    text-align: center;
+}
+
+.course table {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+
+.course table tr {
+    line-height: 2;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.course table tr th, .course table tr td {
+    padding-left: 16px;
+}
+
+.course table tr th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.course table .green {
+    color: #00a67d;
+}
+
+.interest {
+    background: linear-gradient(
+        #00644b,
+        #009772
+    );
+    margin: 60px 0 0 0;
+    padding: 30px 20px;
+}
+
+.interest h2 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+
+.interest .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.interest .text textarea {
+    width: 460px;
+    height: 245px;
+    resize: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.interest .text .data {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+}
+
+.interest .text .data label {
+    color: #fff;
+    font-weight: bold;
+}
+
+.interest .text .data input {
+    border-radius: 5px;
+    height: 32px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.interest .text .data .btn {
+    width: 70px;
+    background-color: #00cc99;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    margin-left: 385px;
+}
+
+.interest .text .data .btn:hover {
+    background-color: #fff;
+    color: #00cc99;
+    border: 2px solid #00cc99;
+}
+
+.footer {
+    display: flex;
+    padding: 25px 20px;
+    justify-content: space-between;
+}
+
+.footer .contact a {
+    text-decoration: none;
+    color: #e54991;
+    line-height: 1.5;
+}
+
+.footer .contact a:hover {
+    color: #fff;
+    background-color: #e54991;
+}
