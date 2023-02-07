@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>六角學院的最終作業</title>
+    <title>*學生作業*六角學院網站</title>
 
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <meta name="description" content="這是學員sandy的作業..." />
+    <meta name="description" content="這是學員Harry的作業..." />
 
-    <meta property="og:title" content="最終作業" />
-    <meta property="og:description" content="一份來自學員sandy的作業">
+    <meta property="og:title" content="網站作業" />
+    <meta property="og:description" content="一份來自學員Harry的作業">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="index.html" />
     <meta property="og:image" content="images/logo_11" />
@@ -18,6 +18,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="/dist/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -38,10 +40,18 @@
                     <img src="images/logo_11.png" alt="logo">
                     <h1>hex school</h1>
                 </a>
-                <ul>
-                    <li><a href="">首頁</a></li>
-                    <li><a href="">產品介紹</a></li>
-                    <li><a href="">聯絡我們</a></li>
+                <ul class="navbar-list">
+                    <li><a href="#">首頁</a></li>
+                    <li class="has-list">
+                        <a class="product-intro" href="#">產品介紹</a>
+                        <ul class="product-list">
+                            <li><a href="#">網頁設計</a></li>
+                            <li><a href="#">前端課程</a></li>
+                            <li><a href="#">後端課程</a></li>
+                            <li><a href="#">全端課程</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">聯絡我們</a></li>
                 </ul>
             </div>
             <div class="title">
@@ -152,6 +162,10 @@
                 <li>電話 : <a href="tel:+886999123456">0999123456</a></li>
             </ul>
         </div>
-    </div>   
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="/js/all.js"></script>
 </body>
 </html>

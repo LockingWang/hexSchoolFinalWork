@@ -96,25 +96,39 @@ table {
     height: 48px;
 }
 
-.header .navbar ul {
+.header .navbar .navbar-list {
     display: flex;
     height: 52px;
 }
 
-.header .navbar ul li {
+.header .navbar .navbar-list li {
     width: 100px;
     text-align: center;
     line-height: 48px;
 }
 
-.header .navbar ul li a {
+.header .navbar .navbar-list li a {
     text-decoration: none;
     color: #00cc99;
     display: block;
 }
 
-.header .navbar ul li a:hover {
+.header .navbar .navbar-list li a:hover {
     border-bottom: 5px solid #00cc99;
+}
+
+.product-list {
+    display: none;
+}
+
+.product-list li {
+    background: #fff;
+    border: 1px solid #00cc99;
+}
+
+.clickOn {
+    color: #fff !important;
+    background: #00cc99;
 }
 
 .header .title {
