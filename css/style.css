@@ -347,7 +347,7 @@ table {
     position: fixed;
     right: 10%;
     bottom: 5%;
-    opacity: 0;
+    display: none;
 }
 
 .goToTop:hover {
