@@ -119,6 +119,7 @@ table {
 
 .product-list {
     display: none;
+    z-index: 100;
 }
 
 .product-list li {
@@ -133,10 +134,20 @@ table {
 
 .header .title {
     height: 418px;
-    background-image: url(../images/banner_15.jpg);
     background-size: 100vw;
     background-repeat:no-repeat;
     border-top: 1px solid transparent;
+}
+
+.swiper {
+    width: 100%;
+    height: 418px;
+    z-index: -9;
+    
+}
+
+.swiper img {
+    width: 100%;
 }
 
 .header .title h2 {
@@ -145,7 +156,9 @@ table {
     font-size: 36px;
     line-height: 1.5;
     padding: 38px 24px;
-    margin: 100px 0;
+    position: relative;
+    top: -70%;
+    z-index: -1;
 }
 
 
@@ -322,4 +335,28 @@ table {
 .footer .contact a:hover {
     color: #fff;
     background-color: #e54991;
+}
+
+/* Top 按鈕 */
+
+.goToTop {
+    width: 80px;
+    height: 80px;
+    background: #e54991;
+    text-align: center;
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
+    opacity: 0;
+}
+
+.goToTop:hover {
+    background: black;
+    color:#e54991;
+    cursor: pointer;
+}
+
+.goToTop a {
+    line-height: 80px;
+    font-size: 36px;
 }
