@@ -7,5 +7,6 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).find('a:first').toggleClass('clickOn');
         $(this).siblings().find('a:first').removeClass('clickOn');
+        $(this).siblings().find('.product-list').slideUp();
     });
 });
