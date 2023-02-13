@@ -54,7 +54,7 @@ table {
 }
 
 .wrap {
-    max-width: 1250px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -132,6 +132,56 @@ table {
     background: #00cc99;
 }
 
+@media(max-width:767px){
+    .header .navbar {
+        display: block;
+    }
+    
+    .header .navbar .home {
+        display: block;
+    }
+    
+    .header .navbar img {
+        display: block;
+        margin: 0 auto;
+        height: 50px;
+    }
+    
+    .header .navbar .navbar-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 100px;
+    }
+    
+    .header .navbar .navbar-list li {
+        width: 50%;
+        height: 60px;
+        line-height: 48px;
+        border: 1px solid #00cc99;
+        border-radius: 5px;
+    }
+    
+    .header .navbar .navbar-list li a {
+        line-height: 60px;
+        border-radius: 5px;
+    }
+
+    .header .navbar .navbar-list li a:hover {
+        color: #fff;
+        background: #00cc99;
+    }
+    
+    .product-list {
+        position: relative;
+    }
+    
+    .header .navbar .navbar-list .product-list li {
+        width: 100%;
+    }
+}
+
 .header .title {
     height: 418px;
     background-size: 100vw;
@@ -157,8 +207,20 @@ table {
     line-height: 1.5;
     padding: 38px 24px;
     position: relative;
-    top: -70%;
+    top: -90%;
     z-index: -1;
+}
+
+@media(max-width:767px){
+    .header .title h2{
+        top: -100%;
+    }
+}
+
+@media(max-width:470px){
+    .header .title h2{
+        font-size: 22px;
+    }
 }
 
 
@@ -177,12 +239,6 @@ table {
     box-shadow: 0 5px 5px gray;
     border-radius: 5px;
     margin-bottom: 30px;
-}
-
-@media  only screen and (max-width: 768px) {
-    .content .skills .skill {
-        
-    }
 }
 
 .content .skills .skill .center {
@@ -220,6 +276,28 @@ table {
     padding: 0;
     line-height: 1.5;
     list-style: initial;
+}
+
+@media(max-width:767px){
+    .skills {
+        margin-top: -120px;
+    }
+}
+
+@media(max-width:470px){
+    .skills {
+        margin-top: -250px;
+    }
+    .content .skills .skill {
+        width: 90%;
+    }
+    .content .skills .skill h2 {
+        font-size: 24px;
+    }
+    .content .skills .skill p {
+        font-size: 18px;
+    
+    }
 }
 
 .course h2 {
@@ -337,6 +415,20 @@ table {
     background-color: #e54991;
 }
 
+@media(max-width:470px){
+    .footer {
+        display: block;
+    }
+    .footer img {
+        display: block;
+        margin: 0 auto;
+    }
+    .footer .contact {
+        text-align: center;
+        margin-top: 25px;
+    }
+}
+
 /* Top 按鈕 */
 
 .goToTop {
@@ -346,7 +438,7 @@ table {
     text-align: center;
     position: fixed;
     right: 10%;
-    bottom: 5%;
+    bottom: 13%;
     display: none;
 }
 
