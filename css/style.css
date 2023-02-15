@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/*以下為個人CSS設計之開始*/
+/* CSS reset end*/
 
 .wrap * {
     box-sizing: border-box;
