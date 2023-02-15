@@ -87,13 +87,14 @@ table {
     padding: 5px 20px;
 }
 
-.header .navbar .home {
-    height: 52px;
+.header .navbar h1 a {
+    background-image: url(/images/logo_11.png);
+    display: block;
+    width: 170px;
+    height: 36px;
+    margin: 8px;
+    text-indent: -50%;
     overflow: hidden;
-}
-
-.header .navbar img {
-    height: 48px;
 }
 
 .header .navbar .navbar-list {
@@ -136,15 +137,10 @@ table {
     .header .navbar {
         display: block;
     }
-    
-    .header .navbar .home {
-        display: block;
-    }
-    
-    .header .navbar img {
-        display: block;
+
+    .header .navbar h1 {
+        width: 170px;
         margin: 0 auto;
-        height: 50px;
     }
     
     .header .navbar .navbar-list {
