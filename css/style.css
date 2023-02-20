@@ -385,6 +385,7 @@ header .title h2 {
     font-weight: bold;
     border: 0;
     align-self: end;
+    cursor: pointer;
 }
 
 .interest .text .data .btn:hover {
@@ -397,6 +398,7 @@ footer {
     display: flex;
     padding: 25px 20px;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .contact a {
